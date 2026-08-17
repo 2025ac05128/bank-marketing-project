@@ -73,7 +73,6 @@ _(Regenerate with `python train_models.py`; exact values may shift slightly with
 project-folder/
 ├── app.py                       # Streamlit app
 ├── train_models.py              # Orchestrator: executes all 5 notebooks below, builds comparison table
-├── make_notebooks.py            # Generates the 5 notebooks (only needed if you want to regenerate them)
 ├── requirements.txt
 ├── README.md
 ├── bank-additional-full.csv     # Full raw dataset (source data)
@@ -95,26 +94,16 @@ project-folder/
     └── feature_schema.json
 ```
 
-Each `.ipynb` in `model/` is fully self-contained — open it directly in
-Jupyter/Colab and "Run All" to reproduce that model from scratch, no
-external helper module required. `train_models.py` at the project root is
-a convenience orchestrator that executes all five notebooks headlessly
-(via `jupyter nbconvert --execute`) and assembles the comparison table.
 
-## Running Locally
 
 ```bash
 pip install -r requirements.txt
-pip install -r requirements-dev.txt   # only needed to regenerate models via train_models.py
 
 # Regenerate all 5 models + test_data.csv + comparison table
-python train_models.py
 
 streamlit run app.py
 ```
 
-Alternatively, open any notebook in `model/` directly in Jupyter/Colab and
-run it top to bottom to retrain just that one model.
 
 ## Streamlit App Features
 
