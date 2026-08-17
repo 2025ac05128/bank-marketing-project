@@ -114,4 +114,4 @@ streamlit run app.py
 
 ## Live Streamlit App Link
 
-> _Add your deployed Streamlit Community Cloud link here._
+> https://bank-marketing-project.streamlit.app/
