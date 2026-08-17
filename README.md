@@ -72,7 +72,6 @@ _(Regenerate with `python train_models.py`; exact values may shift slightly with
 ```
 project-folder/
 ├── app.py                       # Streamlit app
-├── train_models.py              # Orchestrator: executes all 5 notebooks below, builds comparison table
 ├── requirements.txt
 ├── README.md
 ├── bank-additional-full.csv     # Full raw dataset (source data)
@@ -97,8 +96,6 @@ project-folder/
 
 ```bash
 pip install -r requirements.txt
-
-# Regenerate all 5 models + test_data.csv + comparison table
 
 streamlit run app.py
 ```
