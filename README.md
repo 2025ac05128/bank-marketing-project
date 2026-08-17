@@ -91,7 +91,6 @@ project-folder/
     ├── random_forest.joblib
     ├── *_metrics.json                   # Per-model metrics, written by each notebook
     ├── comparison_metrics.csv
-    └── feature_schema.json
 ```
 
 
