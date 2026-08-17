@@ -36,8 +36,7 @@ targeting decisions — i.e., which clients to prioritize for a call.
 
 ## c. GitHub Repository Link
 
-> _Add your repository link here after pushing, e.g._
-> `https://github.com/<your-username>/bank-marketing-classification`
+> https://github.com/2025ac05128/bank-marketing-project
 
 ## d. Models Used
 
